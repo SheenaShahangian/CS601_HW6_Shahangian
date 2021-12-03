@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a page that contains a form 
+    that a site visitor can fill out.">
+    <title>Photos of Then and Now - Assignment 6</title>
+    <!-- link to stylesheet -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;700">
+</head>
+<body>
+
+    <!-- this is the header of the page, that contains the logo for the page -->
+    <header>
+        
+        <!-- logo for the page -->
+        <img src="multimedia/dinner-logo.png" alt="pizza food logo"
+                class="logo_image">
+
+    </header>
+
+    <main>
+
+        <div id="app">
+            <img :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore" 
+            @mouseover="imageOneBeforeHover = imageOneAfterHover" @mouseover="imageOneAltTxtBefore = imageOneAltTxtAfter"/>
+            <img :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore" 
+            @mouseover="imageTwoBeforeHover = imageTwoAfterHover" @mouseover="imageTwoAltTxtBefore = imageTwoAltTxtAfter"/>
+            <img :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore" 
+            @mouseover="imageThreeBeforeHover = imageThreeAfterHover" @mouseover="imageThreeAltTxtBefore = imageThreeAltTxtAfter"/>
+            <img :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore" 
+            @mouseover="imageFourBeforeHover = imageFourAfterHover" @mouseover="imageFourAltTxtBefore = imageFourAltTxtAfter"/>
+          </div>
+        
+           
+    </main>
+
+
+    <!-- site footer -->
+    <footer>
+
+        <!-- a copyright message -->
+        <p>Then and Now &copy; Sheena Shahangian</p>
+
+    </footer>
+
+    <!-- JavaScript for the page, placed at bottom, as recommended by textbook -->
+    <!--Vue script-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
