@@ -1,0 +1,14 @@
+#app {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.image_div {
+    display: inline;
+}
+
+.image_div img {
+    width: 15%;
+    margin: 3%;
+
+}

@@ -1,6 +1,11 @@
 var app = new Vue({
     el: '#app',
     data: {
+        isVisibleOne: true,
+        isVisibleTwo: true,
+        isVisibleThree: true,
+        isVisibleFour: true,
+
         // image one data, including filenames and alt text
         imageOneBeforeHover: "multimedia/sheena-adult-1.jpeg",
         imageOneAltTxtBefore: "Sheena standing in a lake with the wind blowing in her hair",
@@ -24,5 +29,5 @@ var app = new Vue({
         imageFourAltTxtBefore: "Sheena smiling and looking down",
         imageFourAfterHover: "multimedia/sheena-child-4.jpeg",
         imageFourAltTxtAfter: "Sheena wearing a captain's hat"
-    }
-})
+    },
+});
