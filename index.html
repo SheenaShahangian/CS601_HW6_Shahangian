@@ -27,22 +27,22 @@
     <main>
 
         <div id="app">
-            <div class = "image_div" @mouseover="isVisibleOne = !isVisibleOne" @mouseleave="isVisibleOne = !isVisibleOne">
+            <div class = "image_div" @mouseover="isVisibleOne = !isVisibleOne">
                 <img id="imageOneBefore" v-show="isVisibleOne" :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore">
                 <img id="imageOneAfter" v-show="!isVisibleOne" :src="imageOneAfterHover" :alt="imageOneAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleTwo = !isVisibleTwo" @mouseleave="isVisibleOne = !isVisibleOne">
+            <div class = "image_div" @mouseover="isVisibleTwo = !isVisibleTwo">
                 <img id="imageTwoBefore" v-show="isVisibleTwo" :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore">
                 <img id="imageTwoAfter" v-show="!isVisibleTwo" :src="imageTwoAfterHover" :alt="imageTwoAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleThree = !isVisibleThree" @mouseleave="isVisibleOne = !isVisibleOne">
+            <div class = "image_div" @mouseover="isVisibleThree = !isVisibleThree">
                 <img id="imageThreeBefore" v-show="isVisibleThree" :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore">
                 <img id="imageThreeAfter" v-show="!isVisibleThree" :src="imageThreeAfterHover" :alt="imageThreeAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleFour = !isVisibleFour" @mouseleave="isVisibleOne = !isVisibleOne">
+            <div class = "image_div" @mouseover="isVisibleFour = !isVisibleFour">
                 <img id="imageFourBefore" v-show="isVisibleFour" :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore">
                 <img id="imageFourAfter" v-show="!isVisibleFour" :src="imageFourAfterHover" :alt="imageFourAltTxtAfter"> 
             </div>
