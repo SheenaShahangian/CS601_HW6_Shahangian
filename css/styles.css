@@ -13,3 +13,8 @@
     margin: 2%;
 
 }
+
+/* Default the answer container to not be displayed */
+.answer_container {
+    display: none;
+}

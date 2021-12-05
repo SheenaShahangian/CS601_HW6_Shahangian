@@ -10,7 +10,7 @@
     <!-- link to stylesheet -->
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
     <!-- Use of Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;700">
 </head>
 <body>
@@ -26,7 +26,8 @@
 
     <main>
 
-        <div id="app">
+        <section id="app">
+            <h1>{{ primaryHeading }}</h1>
             <div class = "image_div" @mouseover="isVisibleOne = !isVisibleOne">
                 <img id="imageOneBefore" v-show="isVisibleOne" :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore">
                 <img id="imageOneAfter" v-show="!isVisibleOne" :src="imageOneAfterHover" :alt="imageOneAltTxtAfter"> 
@@ -48,15 +49,28 @@
             </div>
 
 
-            <!-- <img :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore" 
-            @mouseover="imageOneBeforeHover = imageOneAfterHover" @mouseover="imageOneAltTxtBefore = imageOneAltTxtAfter"/>
-            <img :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore" 
-            @mouseover="imageTwoBeforeHover = imageTwoAfterHover" @mouseover="imageTwoAltTxtBefore = imageTwoAltTxtAfter"/>
-            <img :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore" 
-            @mouseover="imageThreeBeforeHover = imageThreeAfterHover" @mouseover="imageThreeAltTxtBefore = imageThreeAltTxtAfter"/>
-            <img :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore" 
-            @mouseover="imageFourBeforeHover = imageFourAfterHover" @mouseover="imageFourAltTxtBefore = imageFourAltTxtAfter"/> -->
-          </div>
+            <!-- introduce the timeline part of the page -->
+            <h2>{{ secondaryHeading }}</h2>
+
+            <!-- this is a paragraph blurb explaining what this section is about -->
+            <p>{{ timelineBlurb }}</p>
+
+            <!-- the first timeline milestone -->
+            <h3>{{ firstYear }} </h3>
+            <p class="answer_container" id="answer_one"></p>
+            <button id="button_one" v-on:click="revealYearOne">{{ buttonText }}</button>
+
+            <!-- the second timeline milestone -->
+            <h3>{{ secondYear }} </h3>
+            <p class="answer_container" id="answer_two"></p>
+            <button id="button_two" v-on:click="revealYearTwo">{{ buttonText }}</button>
+
+            <!-- the third timeline milestone -->
+            <h3>{{ thirdYear }} </h3>
+            <p class="answer_container" id="answer_three"></p>
+            <button id="button_three" v-on:click="revealYearThree">{{ buttonText }}</button>
+
+        </section>
         
            
     </main>
