@@ -1,13 +1,32 @@
+/* Style of the body of the page, which should take up the browser window */
+body {
+    background-color: #e6e6e6; /* the background of the page should be an off-white */
+    width: 100%;
+    margin: 0;
+}
+
+/* Style for the page's logo, which is centered at the top */
+.logo_image {
+    display: block; /*rather than inline */
+    margin: 3rem auto; /* center the logo on the page */
+    width: 100px; 
+    height:100px;
+}
+
 #app {
+    width: 80%;
     margin: 2rem auto;
     text-align: center;
 }
 
+/* Style of the image divs */
 .image_div {
     display: inline;
 }
 
+/* Style of the img in the image divs */
 .image_div img {
+    background-color: #ffffff;
     width: 15%;
     padding: 2%;
     margin: 2%;
@@ -17,4 +36,104 @@
 /* Default the answer container to not be displayed */
 .answer_container {
     display: none;
+}
+
+/* Style of h1 */
+h1 {
+    color: #1D3557;
+    font-family: "Merriweather", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 900; /* heavier weight for h1 */
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+
+/* Style of h2 */
+h2 {
+    color: #457B9D;
+    font-family: "Work Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    margin-top: 3rem;
+    font-weight: 400; /* heavier weight for h1 */
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+
+/* Style of h3 */
+h3 {
+    color: #1D3557;
+    font-family: "Work Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 200; /* heavier weight for h1 */
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+
+
+/* Styles of the paragraphs */
+p {
+    color: #1D3557;
+    font-family: "Merriweather", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300; /* lighter weight for paragraphs of text */
+    font-size: 0.9rem;
+    line-height: 1.3rem; /* breathing room between lines */
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* Hyperlink styles */
+a {
+    color: #E63946;
+}
+
+/* Style for buttons */
+button {
+    color: #e6e6e6;
+    background-color: #E63946;
+    font-family: "Work Sans", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1.75rem; /* add breathing room to bottom of the button */
+    padding: 1.2rem;
+    border-style: solid;
+    border-radius: 1.2rem;
+    border-color: #e6e6e6;
+    cursor: pointer; /* add pointing finger on hover over button */
+}
+
+
+/* Style of the footer on the page */
+footer {
+    background-color: #1D3557;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+
+/* Style of the page's footer */
+footer p {
+    color: #ffffff;
+    text-transform: uppercase; /* make footer copyright more noticeable */
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Style of the footer's credit link */
+#credit {
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }

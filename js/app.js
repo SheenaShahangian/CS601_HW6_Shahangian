@@ -9,6 +9,10 @@ let app = new Vue({
         // h1 for the page
         primaryHeading: "Sheena Then and Now",
 
+        // introductory blurb
+        introContent: `Ready for a blast to the past? Hover over the images to move back or forward in time to 
+        see Sheena at different stages of life.`,
+
         // image one data, including filenames and alt text
         imageOneBeforeHover: "multimedia/sheena-adult-1.jpeg",
         imageOneAltTxtBefore: "Sheena standing in a lake with the wind blowing in her hair",
@@ -43,7 +47,7 @@ let app = new Vue({
         // years the timeline will address, as h3s
         firstYear: "What Happened in The Year 2011?",
         secondYear: "What Happened in The Year 2015?",
-        thirdYear: "What Will Happen in The Year 2022",
+        thirdYear: "What Will Happen in The Year 2022?",
 
         // text for buttons
         buttonText: "Click to Find Out",

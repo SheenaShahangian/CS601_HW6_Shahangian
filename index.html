@@ -11,7 +11,7 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
     <!-- Use of Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
     <header>
         
         <!-- logo for the page -->
-        <img src="multimedia/dinner-logo.png" alt="pizza food logo"
+        <img src="multimedia/timeline-logo.png" alt="clock logo"
                 class="logo_image">
 
     </header>
@@ -27,23 +27,32 @@
     <main>
 
         <section id="app">
+
+            <!-- this part contains the images with mouseover events -->
             <h1>{{ primaryHeading }}</h1>
-            <div class = "image_div" @mouseover="isVisibleOne = !isVisibleOne">
+
+            <p>{{ introContent }}</p>
+
+            <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
+            <div class = "image_div" @mouseover="isVisibleOne=!isVisibleOne">
                 <img id="imageOneBefore" v-show="isVisibleOne" :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore">
                 <img id="imageOneAfter" v-show="!isVisibleOne" :src="imageOneAfterHover" :alt="imageOneAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleTwo = !isVisibleTwo">
+            <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
+            <div class = "image_div" @mouseover="isVisibleTwo=!isVisibleTwo">
                 <img id="imageTwoBefore" v-show="isVisibleTwo" :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore">
                 <img id="imageTwoAfter" v-show="!isVisibleTwo" :src="imageTwoAfterHover" :alt="imageTwoAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleThree = !isVisibleThree">
+            <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
+            <div class = "image_div" @mouseover="isVisibleThree=!isVisibleThree">
                 <img id="imageThreeBefore" v-show="isVisibleThree" :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore">
                 <img id="imageThreeAfter" v-show="!isVisibleThree" :src="imageThreeAfterHover" :alt="imageThreeAltTxtAfter"> 
             </div>
 
-            <div class = "image_div" @mouseover="isVisibleFour = !isVisibleFour">
+            <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
+            <div class = "image_div" @mouseover="isVisibleFour=!isVisibleFour">
                 <img id="imageFourBefore" v-show="isVisibleFour" :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore">
                 <img id="imageFourAfter" v-show="!isVisibleFour" :src="imageFourAfterHover" :alt="imageFourAltTxtAfter"> 
             </div>
@@ -81,6 +90,8 @@
 
         <!-- a copyright message -->
         <p>Then and Now &copy; Sheena Shahangian</p>
+
+        <div id="credit">Icons made by <a href="https://www.freepik.com" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">www.flaticon.com</a></div>
 
     </footer>
 
