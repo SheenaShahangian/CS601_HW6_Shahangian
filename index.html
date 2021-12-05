@@ -34,27 +34,27 @@
             <p>{{ introContent }}</p>
 
             <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
-            <div class = "image_div" @mouseover="isVisibleOne=!isVisibleOne">
-                <img id="imageOneBefore" v-show="isVisibleOne" :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore">
-                <img id="imageOneAfter" v-show="!isVisibleOne" :src="imageOneAfterHover" :alt="imageOneAltTxtAfter"> 
+            <div class = "image_div" @mouseover="getOldImageOne" @mouseleave="revertBackOne">
+                <img id="imageOneBefore" v-show="presentImageOneIsVisible" :src="imageOneBeforeHover" :alt="imageOneAltTxtBefore">
+                <img id="imageOneAfter" v-show="pastImageOneIsVisible" :src="imageOneAfterHover" :alt="imageOneAltTxtAfter"> 
             </div>
 
             <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
-            <div class = "image_div" @mouseover="isVisibleTwo=!isVisibleTwo">
-                <img id="imageTwoBefore" v-show="isVisibleTwo" :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore">
-                <img id="imageTwoAfter" v-show="!isVisibleTwo" :src="imageTwoAfterHover" :alt="imageTwoAltTxtAfter"> 
+            <div class = "image_div" @mouseover="getOldImageTwo" @mouseleave="revertBackTwo">
+                <img id="imageTwoBefore" v-show="presentImageTwoIsVisible" :src="imageTwoBeforeHover" :alt="imageTwoAltTxtBefore">
+                <img id="imageTwoAfter" v-show="pastImageTwoIsVisible" :src="imageTwoAfterHover" :alt="imageTwoAltTxtAfter"> 
             </div>
 
             <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
-            <div class = "image_div" @mouseover="isVisibleThree=!isVisibleThree">
-                <img id="imageThreeBefore" v-show="isVisibleThree" :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore">
-                <img id="imageThreeAfter" v-show="!isVisibleThree" :src="imageThreeAfterHover" :alt="imageThreeAltTxtAfter"> 
+            <div class = "image_div" @mouseover="getOldImageThree" @mouseleave="revertBackThree">
+                <img id="imageThreeBefore" v-show="presentImageThreeIsVisible" :src="imageThreeBeforeHover" :alt="imageThreeAltTxtBefore">
+                <img id="imageThreeAfter" v-show="pastImageThreeIsVisible" :src="imageThreeAfterHover" :alt="imageThreeAltTxtAfter"> 
             </div>
 
             <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
-            <div class = "image_div" @mouseover="isVisibleFour=!isVisibleFour">
-                <img id="imageFourBefore" v-show="isVisibleFour" :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore">
-                <img id="imageFourAfter" v-show="!isVisibleFour" :src="imageFourAfterHover" :alt="imageFourAltTxtAfter"> 
+            <div class = "image_div" @mouseover="getOldImageFour" @mouseleave="revertBackFour">
+                <img id="imageFourBefore" v-show="presentImageFourIsVisible" :src="imageFourBeforeHover" :alt="imageFourAltTxtBefore">
+                <img id="imageFourAfter" v-show="pastImageFourIsVisible" :src="imageFourAfterHover" :alt="imageFourAltTxtAfter"> 
             </div>
 
 
