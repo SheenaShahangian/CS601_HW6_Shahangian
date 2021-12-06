@@ -17,7 +17,7 @@ let app = new Vue({
         // h1 for the page
         primaryHeading: "Sheena Then and Now",
 
-        // introductory blurb
+        // introductory blurb for the page
         introContent: `Ready for a blast to the past? Hover over the images to move back or forward in time to 
         see Sheena at different stages of life.`,
 
@@ -64,53 +64,61 @@ let app = new Vue({
     methods: {
 
         /* ---------- METHODS FOR IMAGE ONE HOVER ACTIONS ---------- */
-        /* This method changes the visibility of the past image when hovered over */
+        /* This method changes the visibility of the past and present images when hovered over */
         getOldImageOne: function(){
             this.presentImageOneIsVisible = !this.presentImageOneIsVisible;  
             this.pastImageOneIsVisible = !this.pastImageOneIsVisible;   
         },
-        /* This method changes the visibility of the past image, when mouse leaves */
+        /* This method changes the visibility of the present image to visible 
+        and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackOne: function(){
             this.presentImageOneIsVisible = true; 
             this.pastImageOneIsVisible = false;   
         }, 
 
+
         /* ---------- METHODS FOR IMAGE TWO HOVER ACTIONS ---------- */
-        /* This method changes the visibility of the past image when hovered over */
+        /* This method changes the visibility of the past and present images when hovered over */
         getOldImageTwo: function(){
             this.presentImageTwoIsVisible = !this.presentImageTwoIsVisible;  
             this.pastImageTwoIsVisible = !this.pastImageTwoIsVisible;   
         },
-        /* This method changes the visibility of the past image, when mouse leaves */
+        /* This method changes the visibility of the present image to visible 
+        and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackTwo: function(){
             this.presentImageTwoIsVisible = true; 
             this.pastImageTwoIsVisible = false;   
         }, 
 
+
         /* ---------- METHODS FOR IMAGE THREE HOVER ACTIONS ---------- */
-        /* This method changes the visibility of the past image when hovered over */
+        /* This method changes the visibility of the past and present images when hovered over */
         getOldImageThree: function(){
             this.presentImageThreeIsVisible = !this.presentImageThreeIsVisible;  
             this.pastImageThreeIsVisible = !this.pastImageThreeIsVisible;   
         },
-        /* This method changes the visibility of the past image, when mouse leaves */
+        /* This method changes the visibility of the present image to visible 
+        and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackThree: function(){
             this.presentImageThreeIsVisible = true; 
             this.pastImageThreeIsVisible = false;   
         }, 
 
+
         /* ---------- METHODS FOR IMAGE FOUR HOVER ACTIONS ---------- */
-        /* This method changes the visibility of the past image when hovered over */
+        /* This method changes the visibility of the past and present images when hovered over */
         getOldImageFour: function(){
             this.presentImageFourIsVisible = !this.presentImageFourIsVisible;  
             this.pastImageFourIsVisible = !this.pastImageFourIsVisible;   
         },
-        /* This method changes the visibility of the past image, when mouse leaves */
+        /* This method changes the visibility of the present image to visible 
+        and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackFour: function(){
             this.presentImageFourIsVisible = true; 
             this.pastImageFourIsVisible = false;   
         }, 
 
+        
         /* This is a method that reveals the answer to the first timeline year, and hides the 
         button when the answer is displayed */
         revealYearOne: function() {
@@ -123,7 +131,7 @@ let app = new Vue({
 
             // get the button so we can hide it after revealing the answer
             let yearButton = document.getElementById("button_one");
-            yearButton.style.display = "none";
+            yearButton.style.display = "none"; // hide button
         },
 
         /* This is a method that reveals the answer to the second timeline year, and hides the 
@@ -138,7 +146,7 @@ let app = new Vue({
 
             // get the button so we can hide it after revealing the answer
             let yearButton = document.getElementById("button_two");
-            yearButton.style.display = "none";
+            yearButton.style.display = "none"; // hide button
         },
 
         /* This is a method that reveals the answer to the third timeline year, and hides the 
@@ -154,7 +162,7 @@ let app = new Vue({
 
             // get the button so we can hide it after revealing the answer
             let yearButton = document.getElementById("button_three");
-            yearButton.style.display = "none";
+            yearButton.style.display = "none"; // hide button
         }
      }
 });

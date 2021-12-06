@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a page that contains a form 
-    that a site visitor can fill out.">
+    <meta name="description" content="This is a page that shows photos of Sheena 
+    in the past and today.">
     <title>Photos of Then and Now - Assignment 6</title>
     <!-- link to stylesheet -->
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
@@ -26,6 +26,7 @@
 
     <main>
 
+        <!-- this is where Vue is used -->
         <section id="app">
 
             <!-- this part contains the images with mouseover events -->
@@ -65,17 +66,17 @@
             <p>{{ timelineBlurb }}</p>
 
             <!-- the first timeline milestone -->
-            <h3>{{ firstYear }} </h3>
+            <h3>{{ firstYear }}</h3>
             <p class="answer_container" id="answer_one"></p>
             <button id="button_one" v-on:click="revealYearOne">{{ buttonText }}</button>
 
             <!-- the second timeline milestone -->
-            <h3>{{ secondYear }} </h3>
+            <h3>{{ secondYear }}</h3>
             <p class="answer_container" id="answer_two"></p>
             <button id="button_two" v-on:click="revealYearTwo">{{ buttonText }}</button>
 
             <!-- the third timeline milestone -->
-            <h3>{{ thirdYear }} </h3>
+            <h3>{{ thirdYear }}</h3>
             <p class="answer_container" id="answer_three"></p>
             <button id="button_three" v-on:click="revealYearThree">{{ buttonText }}</button>
 

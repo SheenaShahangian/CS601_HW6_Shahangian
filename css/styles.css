@@ -9,10 +9,11 @@ body {
 .logo_image {
     display: block; /*rather than inline */
     margin: 3rem auto; /* center the logo on the page */
-    width: 100px; 
-    height:100px;
+    width: 90px; 
+    height:90px;
 }
 
+/* Style of the section that uses Vue */
 #app {
     width: 80%;
     margin: 2rem auto;
