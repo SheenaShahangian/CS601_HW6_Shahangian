@@ -1,35 +1,41 @@
 # Read Me - MET CS 601 Sheena Shahangian
 
-Per the professor's request during lecture, I have hosted my assignment with Netlify. As such, you can find my index.html file at the following URL: https://serene-wing-4e1877.netlify.app/
+While not explicitly required, I have opted to host my assignment 6 at the following URL: https://xenodochial-yonath-676384.netlify.app/
 
-Please click on that link in order to run this program. As the assignment instructions indicate, this link (rather than opening the index.html file locally) will be the only way to use fetch.
+Please click on that link in order to run this program, or you can run if from the index.html file supplied in the zipped folder submitted via Blackboard.
 
-In order to run the program, I have created a styled and designed page (live hosted link above). This page has instructions, along with a button you can press to fetch my degree data. **Please note**, the degree data will replace the instructions paragraph when you click the button. You'll notice a table of degree information will replace the instructions and the let's start button will be hidden once results are rendered (I will include before and after screenshots below for reference of a sample run I did of this program to show you what I mean).
+In order to run the program, I have created a styled and designed page (live hosted link above). When you open this page, you will find four images of myself in the modern day. When you hover over each of these, a photo from my past will show. When you hover off, it will revert back to the modern day image. I have used Vue to perform this functionality.
 
-The JSON file I created can be found at: https://serene-wing-4e1877.netlify.app/degrees.json
-
-Per the instructions, I have located my JavaScript program (by the name of app.js) in the same directory as my JSON file.
+Beneath the images grouping, I have another area that uses Vue. This is a small timeline of sorts, with buttons the user can click on to reveal what happened in my life at that time. When they click the button, the button disappears and the answer for that year written to the DOM.
 
 When looking at the zipped folder, the directory structure is a follows:
 
 * The css folder contains the stylesheet, by the name of "styles.css".
-* The multimedia folder contains a single image, that is the degree site's logo.
-* The main folder contains the app.js and degrees.json files.
-* The program can be run by clicking on the live hosted URL above and clicking the "Let's Start" button.
-
-### Before Clicking the Let's Start Button
-
-As you can see below, we start with a page with instructions.
-
-<img width="1674" alt="Screen Shot 2021-12-02 at 10 34 08 AM" src="https://user-images.githubusercontent.com/74014027/144478280-8fe05144-08bf-4ce9-9464-546b91ed48c7.png">
-
-### After Clicking the Let's Start Button
-
-The difference is subtle here, but you'll notice the paragraph of text that contained instructions has been replaced with a table containing my degree data that I fetched, and the button to start is now gone, as it is no longer relevant.
-
-<img width="1674" alt="Screen Shot 2021-12-04 at 5 58 57 PM" src="https://user-images.githubusercontent.com/74014027/144729318-646aaf20-13f7-41f5-82c4-c608987f1b29.png">
+* The multimedia folder contains all the images used on the site, including the site logo.
+* The js folder contains my app.js file. As the module notes specify, it is in my JS file where I create my Vue instance.
+* The program can be run by clicking on the live hosted URL above or by going to the index.html file.
 
 
+
+Below, I have shown screenshots of a quick sample run of the program. You'll see in the first screenshot, I have entered the page and have not hovered over any images. In the second screenshot, I hover over the first image, and you see it changes to an older photo of me. The last screenshot shows when I hover off that image, and it reverts back.
+
+### Before Hovering Over Any image
+
+As you can see below, we start with all images being modern day photos of me. My mouse is to the left of the first image and has not hovered over any photos yet.
+
+<img width="1680" alt="Screen Shot 2021-12-05 at 8 45 46 PM" src="https://user-images.githubusercontent.com/74014027/144784057-82a2faba-1700-4e8c-9982-7423f46e372b.png">
+
+### After Hovering Over An Image
+
+As you can see below, when I hover over an image (in this case, my cursor is hovering over the first image), it shows me an older image in time, rather than the first image we saw above.
+
+<img width="1680" alt="Screen Shot 2021-12-05 at 8 45 59 PM" src="https://user-images.githubusercontent.com/74014027/144784181-2989fbd8-11e7-49d1-8ae9-0c499b544fbb.png">
+
+### After Un-Hovering Over An Image
+
+As you can see below, when I remove my mouse from the image (it is now to the left of the first image again), it goes back to the original modern day image.
+
+<img width="1680" alt="Screen Shot 2021-12-05 at 8 46 11 PM" src="https://user-images.githubusercontent.com/74014027/144784282-4eb0e060-486d-4bd7-8e9d-ea1c02fd71e0.png">
 
 
 ## GitHub
@@ -41,20 +47,14 @@ The repository is public, however should you have any trouble accessing it, plea
 
 ## Requested Elements
 
-Per the instructions, I have used the JSON file from the module notes as my guide when creating my own JSON file, which can be found at this link: https://serene-wing-4e1877.netlify.app/degrees.json
+Per the instructions, I have done the following:
 
-The JSON file can also be found in the submitted zipped folder, with the filename degrees.json. This has been run through the JSON validator and does validate.
-
-Per the instructions, I have done the following in my app.js file, which contains my program's logic.
-
-* I have uploaded my json file (degrees.json) to the web server. It can be found via this link: https://serene-wing-4e1877.netlify.app/degrees.json
-* I have created a JavaScript program (located in app.js) that does the following:
-  * It creates a fetch request to return a promise.
-  * It resolves the promise using the Response class.
-  * It checks the status code of the response (I do this in a conditional statement, but I also print this information to the console as well, for good measure).
-  * I process the returned JSON data using JavaScript. I opted to use all of the data stored in the JSON file, which I then wrote to the html page in a table format.
-
-* I have uploaded my JS program (app.js) to the same directory as my JSON file. You can find a direct live link to my JS here: https://serene-wing-4e1877.netlify.app/app.js
+* I have created an html page (index.html) with four images of my choice. These are four images of me in the modern day.
+* I have also added four images of myself when I was younger. These are the images that can be seen when hovered.
+* I have used the Vue.js library to allow for the image to change from the modern-day current image to the image of me when I was younger. When the user un-hovers, it will revert back to the modern day image.
+* I have also used the double curly braces to pull in data from my Vue instance (in my app.js file) to populate everything from the h1 on the page, the h2 on the page, multiple h3 tags, paragraphs, and button text.
+* I have used Vue attribute binding for my changing images, as well as their alt text.
+* In addition to the above Vue functionalities, I have also used v-on:click multiple times for the timeline buttons I have included at the bottom of the page. With those, when a user clicks one of the buttons, the button disappears and what you see is a blurb of text telling you what happened during a specific year in my life.
 * I have made sure to run this program numerous times to ensure it works. To go above and beyond, I have also tested it in more than one browser, too.
 
 ### Incorporation of Other Additional Elements - How I Went Above and Beyond
@@ -62,10 +62,9 @@ Per the instructions, I have done the following in my app.js file, which contain
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
 
 * I have tested my program in Google Chrome, Firefox, and Safari to ensure it works as expected in multiple browsers.
+* I have opted to host my assignment (see live link above).
 * I have designed and styled my page so that it is a clean and easy to use user interface.
-* I have used new ES6 features, such as arrow functions, let and const, and string template literals. I have also used an async function, per the professor's recommendation (ES8).
-* While not explicitly asked for in the instructions, I have opted to write my degree data back into the html page, so the user doesn't have to reference the console if they don't want to.
-* I have ensured that I have not only checked the status code of the response, but that I have a catch statement that gracefully handles those issues.
+* As mentioned above, rather than only adding one additional example of a Vue feature or event, I added  three events for the timeline portion of the page, so that when a user clicks each button, a different method is called. I have also used Vue data binding multiple times, which was not required. I have also used the double curly braces to populate data from my Vue instance into the html page. My goal here was to make sure I tested out as many of the features in the module content as I saw fit.
 * Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
 * I have thoroughly commented all of my code, to make it easy to understand and come back to in the future.
-* While not explicitly mentioned in the instructions this week, I made sure to run my HTML and CSS through the validators to ensure they don't produce any errors.
+* I have run my CSS through a validator. For my HTML, while it was stated we didn't need to use validators, as Vue isn't compatible with them, I opted to use it just to make sure I didn't have any non-Vue related errors. It's worth noting, the validator will say things, like I don't have any alt text or I don't have an img src. I do have these, but I have used Vue to specify them this week. The validator cannot understand that, though. However, I have ensured that there are no non-Vue related errors.
