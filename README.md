@@ -2,17 +2,17 @@
 
 While not explicitly required, I have opted to host my assignment 6 at the following URL: https://xenodochial-yonath-676384.netlify.app/
 
-Please click on that link in order to run this program, or you can run if from the index.html file supplied in the zipped folder submitted via Blackboard.
+Please click on that link in order to run this program, or you can run it from the index.html file supplied in the zipped folder submitted via Blackboard.
 
-In order to run the program, I have created a styled and designed page (live hosted link above). When you open this page, you will find four images of myself in the modern day. When you hover over each of these, a photo from my past will show. When you hover off, it will revert back to the modern day image. I have used Vue to perform this functionality.
+In order to run the program, I have created a styled and designed page (live hosted link above). When you open this page, you will find four images of myself in the modern day. When you hover over each of these images, a photo from my past will show in its place. When you hover off the photo, it will revert back to the modern day image. I have used Vue to perform this functionality, specifically using the @mouseover and @mouseleave. I have also used v-show.
 
-Beneath the images grouping, I have another area that uses Vue. This is a small timeline of sorts, with buttons the user can click on to reveal what happened in my life at that time. When they click the button, the button disappears and the answer for that year written to the DOM.
+Beneath the images grouping, I have another area that also uses Vue. This is a small timeline of sorts, with buttons the user can click on to reveal what happened in my life at that time/year. When they click the button, the button disappears and the answer for what happened in that year written to the DOM. v-on: click is use for this.
 
 When looking at the zipped folder, the directory structure is a follows:
 
 * The css folder contains the stylesheet, by the name of "styles.css".
 * The multimedia folder contains all the images used on the site, including the site logo.
-* The js folder contains my app.js file. As the module notes specify, it is in my JS file where I create my Vue instance.
+* The js folder contains my app.js file. As the module notes specify, it is in my JS file where I create my Vue instance. In my html file, I have used the Vue cdn link provided in the module notes.
 * The program can be run by clicking on the live hosted URL above or by going to the index.html file.
 
 
@@ -52,8 +52,8 @@ Per the instructions, I have done the following:
 * I have created an html page (index.html) with four images of my choice. These are four images of me in the modern day.
 * I have also added four images of myself when I was younger. These are the images that can be seen when hovered.
 * I have used the Vue.js library to allow for the image to change from the modern-day current image to the image of me when I was younger. When the user un-hovers, it will revert back to the modern day image.
-* I have also used the double curly braces to pull in data from my Vue instance (in my app.js file) to populate everything from the h1 on the page, the h2 on the page, multiple h3 tags, paragraphs, and button text.
-* I have used Vue attribute binding for my changing images, as well as their alt text.
+* I have also used the double curly braces to pull in data from my Vue instance (in my app.js file) to populate everything from the h1 on the page, the h2 on the page, multiple h3 tags, paragraphs, to the button text.
+* I have used Vue attribute binding for my changing image filenames (using :src), as well as their alt text (using :alt).
 * In addition to the above Vue functionalities, I have also used v-on:click multiple times for the timeline buttons I have included at the bottom of the page. With those, when a user clicks one of the buttons, the button disappears and what you see is a blurb of text telling you what happened during a specific year in my life.
 * I have made sure to run this program numerous times to ensure it works. To go above and beyond, I have also tested it in more than one browser, too.
 
@@ -65,6 +65,6 @@ I've attempted to add some new features beyond the standard requirements listed 
 * I have opted to host my assignment (see live link above).
 * I have designed and styled my page so that it is a clean and easy to use user interface.
 * As mentioned above, rather than only adding one additional example of a Vue feature or event, I added  three events for the timeline portion of the page, so that when a user clicks each button, a different method is called. I have also used Vue data binding multiple times, which was not required. I have also used the double curly braces to populate data from my Vue instance into the html page. My goal here was to make sure I tested out as many of the features in the module content as I saw fit.
-* Per the professor's recommendation, I have opted to use let and const rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
+* Per the professor's recommendation, I have opted to use let rather than var for declaring my variables, as I wanted to experiment with having block level scope, which var does not offer.
 * I have thoroughly commented all of my code, to make it easy to understand and come back to in the future.
-* I have run my CSS through a validator. For my HTML, while it was stated we didn't need to use validators, as Vue isn't compatible with them, I opted to use it just to make sure I didn't have any non-Vue related errors. It's worth noting, the validator will say things, like I don't have any alt text or I don't have an img src. I do have these, but I have used Vue to specify them this week. The validator cannot understand that, though. However, I have ensured that there are no non-Vue related errors.
+* I have run my CSS through a validator. For my HTML, while it was stated we didn't need to use validators, as Vue isn't compatible with them, I opted to use it just to make sure I didn't have any non-Vue related errors. It's worth noting, the validator will say things, like I don't have any alt text or I don't have an img src. I do have these, but I have used Vue attribute binding to specify them this week. The validator cannot understand that, though. However, I have ensured that there are no non-Vue related errors.
