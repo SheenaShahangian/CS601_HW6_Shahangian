@@ -66,8 +66,8 @@ let app = new Vue({
         /* ---------- METHODS FOR IMAGE ONE HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageOne: function(){
-            this.presentImageOneIsVisible = !this.presentImageOneIsVisible;  
-            this.pastImageOneIsVisible = !this.pastImageOneIsVisible;   
+            this.presentImageOneIsVisible = false;  
+            this.pastImageOneIsVisible = true;   
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
@@ -80,8 +80,8 @@ let app = new Vue({
         /* ---------- METHODS FOR IMAGE TWO HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageTwo: function(){
-            this.presentImageTwoIsVisible = !this.presentImageTwoIsVisible;  
-            this.pastImageTwoIsVisible = !this.pastImageTwoIsVisible;   
+            this.presentImageTwoIsVisible = false;  
+            this.pastImageTwoIsVisible = true;   
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
@@ -94,8 +94,8 @@ let app = new Vue({
         /* ---------- METHODS FOR IMAGE THREE HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageThree: function(){
-            this.presentImageThreeIsVisible = !this.presentImageThreeIsVisible;  
-            this.pastImageThreeIsVisible = !this.pastImageThreeIsVisible;   
+            this.presentImageThreeIsVisible = false;  
+            this.pastImageThreeIsVisible = true;   
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
@@ -108,8 +108,8 @@ let app = new Vue({
         /* ---------- METHODS FOR IMAGE FOUR HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageFour: function(){
-            this.presentImageFourIsVisible = !this.presentImageFourIsVisible;  
-            this.pastImageFourIsVisible = !this.pastImageFourIsVisible;   
+            this.presentImageFourIsVisible = false;  
+            this.pastImageFourIsVisible = true;   
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
@@ -118,7 +118,7 @@ let app = new Vue({
             this.pastImageFourIsVisible = false;   
         }, 
 
-        
+
         /* This is a method that reveals the answer to the first timeline year, and hides the 
         button when the answer is displayed */
         revealYearOne: function() {
