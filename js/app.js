@@ -1,14 +1,16 @@
+/* This js file contains my Vue instance that is used on my index.html file. */
+
 let app = new Vue({
     el: '#app',
     data: {
 
-        // booleans to indicate if the present day image is visible, start default as visible
+        // booleans to indicate if the present day image is visible, start default as being visible
         presentImageOneIsVisible: true,
         presentImageTwoIsVisible: true,
         presentImageThreeIsVisible: true,
         presentImageFourIsVisible: true,
         
-        // booleans to indicate if the image from the past is visible, start default at not visible
+        // booleans to indicate if the image from the past is visible, start default as being not visible
         pastImageOneIsVisible: false,
         pastImageTwoIsVisible: false,
         pastImageThreeIsVisible: false,
@@ -66,61 +68,61 @@ let app = new Vue({
         /* ---------- METHODS FOR IMAGE ONE HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageOne: function(){
-            this.presentImageOneIsVisible = false;  
-            this.pastImageOneIsVisible = true;   
+            this.presentImageOneIsVisible = false; // hide the modern day image
+            this.pastImageOneIsVisible = true; // show the image from the past
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackOne: function(){
-            this.presentImageOneIsVisible = true; 
-            this.pastImageOneIsVisible = false;   
+            this.presentImageOneIsVisible = true; // show the modern day image again
+            this.pastImageOneIsVisible = false; // now hide the image from the past
         }, 
 
 
         /* ---------- METHODS FOR IMAGE TWO HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageTwo: function(){
-            this.presentImageTwoIsVisible = false;  
-            this.pastImageTwoIsVisible = true;   
+            this.presentImageTwoIsVisible = false; // hide the modern day image
+            this.pastImageTwoIsVisible = true; // show the image from the past
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackTwo: function(){
-            this.presentImageTwoIsVisible = true; 
-            this.pastImageTwoIsVisible = false;   
+            this.presentImageTwoIsVisible = true; // show the modern day image again
+            this.pastImageTwoIsVisible = false; // now hide the image from the past
         }, 
 
 
         /* ---------- METHODS FOR IMAGE THREE HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageThree: function(){
-            this.presentImageThreeIsVisible = false;  
-            this.pastImageThreeIsVisible = true;   
+            this.presentImageThreeIsVisible = false; // hide the modern day image
+            this.pastImageThreeIsVisible = true; // show the image from the past 
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackThree: function(){
-            this.presentImageThreeIsVisible = true; 
-            this.pastImageThreeIsVisible = false;   
+            this.presentImageThreeIsVisible = true; // show the modern day image again
+            this.pastImageThreeIsVisible = false; // now hide the image from the past 
         }, 
 
 
         /* ---------- METHODS FOR IMAGE FOUR HOVER ACTIONS ---------- */
         /* This method changes the visibility of the past and present images when hovered over */
         getOldImageFour: function(){
-            this.presentImageFourIsVisible = false;  
-            this.pastImageFourIsVisible = true;   
+            this.presentImageFourIsVisible = false; // hide the modern day image
+            this.pastImageFourIsVisible = true; // show the image from the past
         },
         /* This method changes the visibility of the present image to visible 
         and the past image to invisible, which is done when we hover off of/away from a picture */
         revertBackFour: function(){
-            this.presentImageFourIsVisible = true; 
-            this.pastImageFourIsVisible = false;   
+            this.presentImageFourIsVisible = true; // show the modern day image again
+            this.pastImageFourIsVisible = false; // now hide the image from the past 
         }, 
 
 
         /* This is a method that reveals the answer to the first timeline year, and hides the 
-        button when the answer is displayed */
+        button when the answer is displayed, as the button is no longer needed. */
         revealYearOne: function() {
             // get the answer container and replace its contents with the actual answer
             let answerOne = document.getElementById("answer_one");

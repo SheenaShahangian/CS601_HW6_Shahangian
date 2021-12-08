@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a page that shows photos of Sheena 
-    in the past and today.">
+    in the past and in the modern day.">
     <title>Photos of Then and Now - Assignment 6</title>
     <!-- link to stylesheet -->
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
@@ -30,8 +30,11 @@
         <section id="app">
 
             <!-- this part contains the images with mouseover events -->
+
+            <!-- h1 data populated using Vue, see app.js for details -->
             <h1>{{ primaryHeading }}</h1>
 
+            <!-- p data populated using Vue, see app.js for details -->
             <p>{{ introContent }}</p>
 
             <!-- before and after images contained in a div, as it's the most appropriate tag type in this case -->
@@ -60,22 +63,26 @@
 
 
             <!-- introduce the timeline part of the page -->
+
+            <!-- h2 data populated using Vue, see app.js for details -->
             <h2>{{ secondaryHeading }}</h2>
 
             <!-- this is a paragraph blurb explaining what this section is about -->
+
+            <!-- p data populated using Vue, see app.js for details -->
             <p>{{ timelineBlurb }}</p>
 
-            <!-- the first timeline milestone -->
+            <!-- the first timeline milestone, using v-on:click and Vue attribute binding -->
             <h3>{{ firstYear }}</h3>
             <p class="answer_container" id="answer_one"></p>
             <button id="button_one" v-on:click="revealYearOne">{{ buttonText }}</button>
 
-            <!-- the second timeline milestone -->
+            <!-- the second timeline milestone, using v-on:click and Vue attribute binding -->
             <h3>{{ secondYear }}</h3>
             <p class="answer_container" id="answer_two"></p>
             <button id="button_two" v-on:click="revealYearTwo">{{ buttonText }}</button>
 
-            <!-- the third timeline milestone -->
+            <!-- the third timeline milestone, using v-on:click and Vue attribute binding -->
             <h3>{{ thirdYear }}</h3>
             <p class="answer_container" id="answer_three"></p>
             <button id="button_three" v-on:click="revealYearThree">{{ buttonText }}</button>
