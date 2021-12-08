@@ -72,17 +72,17 @@
             <!-- p data populated using Vue, see app.js for details -->
             <p>{{ timelineBlurb }}</p>
 
-            <!-- the first timeline milestone, using v-on:click and Vue attribute binding -->
+            <!-- the first timeline milestone, using v-on:click and double curly braces to populate data for button text -->
             <h3>{{ firstYear }}</h3>
             <p class="answer_container" id="answer_one"></p>
             <button id="button_one" v-on:click="revealYearOne">{{ buttonText }}</button>
 
-            <!-- the second timeline milestone, using v-on:click and Vue attribute binding -->
+            <!-- the second timeline milestone, using v-on:click and double curly braces to populate data for button text -->
             <h3>{{ secondYear }}</h3>
             <p class="answer_container" id="answer_two"></p>
             <button id="button_two" v-on:click="revealYearTwo">{{ buttonText }}</button>
 
-            <!-- the third timeline milestone, using v-on:click and Vue attribute binding -->
+            <!-- the third timeline milestone, using v-on:click and double curly braces to populate data for button text -->
             <h3>{{ thirdYear }}</h3>
             <p class="answer_container" id="answer_three"></p>
             <button id="button_three" v-on:click="revealYearThree">{{ buttonText }}</button>
